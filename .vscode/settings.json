@@ -1,0 +1,57 @@
+{
+    /* Language - All */
+    "[html][json][jsonc]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    /* Language - JavaScript */
+    "[javascript][typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+
+    /* Language - Markdown */
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "explicit"
+        }
+    },
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": false,
+        "**/.hg": false,
+        "**/CVS": false,
+        "**/.DS_Store": false,
+        "**/Thumbs.db": false,
+        "node_modules": false,
+        ".*": false,
+        "package.*": false,
+        "vite.config.ts": false,
+        "tsconfig.json": false,
+        "index.html": false,
+        "types": false,
+        "dist": false
+    },
+    "explorerExclude.backup": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "node_modules": true,
+        ".*": true,
+        "package.*": true,
+        "vite.config.ts": true,
+        "tsconfig.json": true,
+        "index.html": true,
+        "types": true,
+        "dist": true
+    }
+}
