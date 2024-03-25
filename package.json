@@ -1,0 +1,47 @@
+{
+    "private": true,
+    "name": "tab-channel",
+    "version": "0.0.0",
+    "description": "",
+    "author": "Alexandre Gallais (https://github.com/AlexandreGallais/)",
+    "homepage": "https://github.com/AlexandreGallais/tab-channel",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "main": "./dist/index.js",
+    "browser": true,
+    "type": "module",
+    "module": "./dist/index.js",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./types/index.d.ts"
+        }
+    },
+    "files": [
+        "./dist/index.js",
+        "./types/index.d.ts",
+        "./package.json"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && terser ./dist/index.js --compress --mangle --output ./dist/index.js",
+        "preview": "vite preview",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^7.3.1",
+        "@typescript-eslint/parser": "^7.3.1",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "prettier": "^3.2.5",
+        "terser": "^5.29.2",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0",
+        "vitest": "^1.4.0"
+    }
+}
