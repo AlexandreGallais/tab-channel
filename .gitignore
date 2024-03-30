@@ -21,3 +21,6 @@ types
 *.njsproj
 *.sln
 *.sw?
+
+# Unit test
+coverage

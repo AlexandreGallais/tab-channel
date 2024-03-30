@@ -24,6 +24,12 @@
             "parserOptions": {
                 "project": ["tsconfig.node.json"]
             }
+        },
+        {
+            "files": ["script.ts"],
+            "parserOptions": {
+                "project": ["tsconfig.serve.json"]
+            }
         }
     ]
 }

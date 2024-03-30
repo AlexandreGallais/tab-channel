@@ -15,7 +15,7 @@ interface EmitterOptions {
 }
 
 type ChannelData<T> = {
-    tabId: TabChannel<T>['tabId'];
+    tabId: TabChannel<void>['tabId'];
     self: boolean;
     data: T;
 };
@@ -45,7 +45,7 @@ export class TabChannel<T> {
     private get tabId(): string {
         let id = sessionStorage.getItem('tab-channel-id');
         if (id) return id;
-        id = [...self.crypto.getRandomValues(new Uint8Array(8))]
+        id = [...crypto.getRandomValues(new Uint8Array(8))]
             .map((x) => x % 10)
             .join('');
         sessionStorage.setItem('tab-channel-id', id);

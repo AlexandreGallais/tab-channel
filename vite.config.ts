@@ -9,4 +9,12 @@ export default defineConfig({
             formats: ['es'],
         },
     },
+    test: {
+        environment: 'jsdom',
+        coverage: {
+            enabled: true,
+            provider: 'istanbul',
+            include: ['src'],
+        },
+    },
 });

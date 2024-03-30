@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
-        "composite": true,
         "module": "NodeNext",
-        "moduleResolution": "NodeNext"
-    },
-    "include": ["src/**/*.test.ts", "vite.config.ts"]
+        "moduleResolution": "NodeNext",
+        "allowImportingTsExtensions": true,
+        "noEmit": true
+    }
 }
