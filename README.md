@@ -1,3 +1,3 @@
 # TabChannel
 
-A simple class to send data between browser tabs using BroadcastChannel.
+A simple class for communicating between different tabs on the same domain using BroadcastChannel.
