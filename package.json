@@ -4,6 +4,7 @@
     "description": "",
     "author": "Alexandre Gallais (https://github.com/AlexandreGallais/)",
     "homepage": "https://github.com/AlexandreGallais/tab-channel",
+    "repository": "https://github.com/AlexandreGallais/tab-channel",
     "licenses": [
         {
             "type": "MIT",
