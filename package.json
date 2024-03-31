@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "tab-channel",
+    "name": "@alexandregallais/tab-channel",
     "version": "0.0.0",
     "description": "",
     "author": "Alexandre Gallais (https://github.com/AlexandreGallais/)",
@@ -26,6 +26,9 @@
         "./types/index.d.ts",
         "./package.json"
     ],
+    "publishConfig": {
+        "@alexandregallais:registry": "https://npm.pkg.github.com"
+    },
     "scripts": {
         "dev": "vite",
         "build": "tsc && terser ./dist/index.js --compress --mangle --output ./dist/index.js",
