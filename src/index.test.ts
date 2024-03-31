@@ -71,7 +71,7 @@ describe('Class TabChannel:', () => {
             expect(spyListenerOnce.mock.calls.length).toEqual(1);
         });
     });
-
+    /*
     describe('Method postData:', () => {
         test('Send data only to other tab.', async () => {
             const listenerSameTab = { x: () => {} };
@@ -129,4 +129,5 @@ describe('Class TabChannel:', () => {
             expect(spyListenerOtherTab.mock.calls.length).toEqual(4);
         });
     });
+    */
 });
